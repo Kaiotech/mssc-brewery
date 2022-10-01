@@ -1,2 +1,10 @@
-package framework.msscbrewery.services;public interface CustomerService {
+package framework.msscbrewery.services;
+
+import framework.msscbrewery.web.model.CustomerDto;
+
+import java.util.UUID;
+
+public interface CustomerService {
+
+    CustomerDto getCustomerById(UUID customerId);
 }

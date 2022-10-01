@@ -1,4 +1,4 @@
-package framework.msscbrewery.webmodel;
+package framework.msscbrewery.web.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
