@@ -29,7 +29,7 @@ public class CustomerController {
         CustomerDto savedCustomerDto = customerService.saveNewCustomer(customerDto);
 
         HttpHeaders customerHeaders = new HttpHeaders();
-        customerHeaders.add("Customer", "/api/v1/customer" + savedCustomerDto.getId().toString());
+        customerHeaders.add("Location", "/api/v1/customer" + savedCustomerDto.getId().toString());
 
         return new ResponseEntity(customerHeaders, HttpStatus.CREATED);
     }
