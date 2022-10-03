@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@RequestMapping("/api/v1/customer")
+@RequestMapping("/api/v1/customer/")
 @RestController
 public class CustomerController {
 
@@ -29,7 +29,7 @@ public class CustomerController {
         CustomerDto savedCustomerDto = customerService.saveNewCustomer(customerDto);
 
         HttpHeaders customerHeaders = new HttpHeaders();
-        customerHeaders.add("Location", "/api/v1/customer" + savedCustomerDto.getId().toString());
+        customerHeaders.add("Location", "/api/v1/customer/" + savedCustomerDto.getId().toString());
 
         return new ResponseEntity(customerHeaders, HttpStatus.CREATED);
     }
