@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@RequestMapping("/api/v1/beer")
+@RequestMapping("/api/v1/beer/")
 @RestController
 public class BeerController {
 
@@ -30,7 +30,7 @@ public class BeerController {
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Location", "/api/v1/beer" + savedDto.getId().toString());
+        headers.add("Location", "/api/v1/beer/" + savedDto.getId().toString());
 
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
