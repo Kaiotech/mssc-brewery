@@ -1,3 +1,6 @@
 framework\msscbrewery\web\model\BeerDto.class
 framework\msscbrewery\web\model\v2\BeerDtoV2.class
 framework\msscbrewery\web\model\v2\BeerStyle.class
+framework\msscbrewery\web\mappers\CustomerMapper.class
+framework\msscbrewery\domain\Customer.class
+framework\msscbrewery\web\model\CustomerDto.class
