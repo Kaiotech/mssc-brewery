@@ -1,0 +1,3 @@
+framework\msscbrewery\web\model\BeerDto.class
+framework\msscbrewery\web\model\v2\BeerDtoV2.class
+framework\msscbrewery\web\model\v2\BeerStyle.class
